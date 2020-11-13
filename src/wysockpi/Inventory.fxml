@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane id="Pane" prefHeight="135.0" prefWidth="330.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wysockpi.InventoryController">
+    <center>
+        <GridPane alignment="CENTER">
+            <children>
+                <HBox GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="4">
+                    <padding>
+                        <Insets bottom="10" />
+                    </padding>
+                    <Label text="Select Item: " />
+                
+                    <ComboBox fx:id="CookieBox" editable="false" prefWidth="150"/>
+                </HBox>
+                <VBox GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.columnSpan="2">
+                    <padding>
+                        <Insets right="5" left="5" />
+                    </padding>
+                    <Label text="Enter Quantity Sold:" />
+                    <TextField fx:id="txtSell" prefWidth="150"/>
+                    <Button fx:id="btnSell" text="_Sell" prefWidth="150"  mnemonicParsing="true"/>
+                </VBox>
+
+                <VBox GridPane.rowIndex="1" GridPane.columnSpan="3" GridPane.columnIndex="2">
+                    <padding>
+                        <Insets right="5" left="5" />
+                    </padding>
+                    <Label text="Enter Quantity Received:"/>
+                    <TextField fx:id="txtAdd" prefWidth="150"/>
+                    <Button fx:id="btnAdd" prefWidth="150" text="_Add" mnemonicParsing="true"/>
+                </VBox>
+            </children>    
+        </GridPane>
+    </center>
+    <bottom>
+        <HBox alignment="CENTER_RIGHT">
+            <padding>
+                <Insets top="5" />
+            </padding>
+            <Button fx:id="btnExit" text="_Exit" mnemonicParsing="true"/>
+        </HBox>
+    </bottom>
+</BorderPane> 
